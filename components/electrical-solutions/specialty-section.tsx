@@ -25,7 +25,7 @@ export default function SpecialtySection() {
           <div className="absolute -inset-2 bg-blue-600/20 blur-2xl rounded-full group-hover:bg-blue-600/30 transition-all duration-700" />
           <div className="relative rounded-2xl border border-stone-800 overflow-hidden shadow-2xl">
             <img 
-              src="/inspections-visual.jpg" 
+              src="/images/electrical-solutions/inspections-visual.png" 
               alt="Licensed electrician conducting detailed home inspection" 
               className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-1000"
             />
