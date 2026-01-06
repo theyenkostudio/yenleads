@@ -1,7 +1,7 @@
 import { BusinessData } from "@/lib/types/business";
 
 export const rogersRefrigeration: BusinessData = {
-  slug: "rogers-refrigeration",
+  slug: "rogers",
   name: "Rogers Refrigeration",
   tagline: "High Performance HVAC/R Solutions For Your Home & Business",
 

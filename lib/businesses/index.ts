@@ -5,7 +5,7 @@ import { rogersRefrigeration } from "./rogers-refrigeration";
 // Registry of all businesses
 export const businesses: Record<string, BusinessData> = {
   "electrical-solutions": electricalSolutions,
-  "rogers-refrigeration": rogersRefrigeration,
+  "rogers": rogersRefrigeration,
 };
 
 // Get a business by slug
