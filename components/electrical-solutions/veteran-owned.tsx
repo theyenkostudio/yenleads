@@ -5,7 +5,7 @@ export default function VeteranTrust() {
       <div className="container mx-auto px-6 text-center">
         <div className="flex justify-center mb-8">
           <img 
-            src="/veteran-owned-badge.png" 
+            src="/images/electrical-solutions/veteran-owned.jpeg" 
             alt="Veteran Owned Business" 
             className="h-24 md:h-32 grayscale brightness-200"
           />
@@ -22,8 +22,8 @@ export default function VeteranTrust() {
           we treat every project with the care and integrity it deserves.
         </p>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-8 text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold">
-          <span>Licensed & Insured</span> <span>•</span> <span>Pearl, MS Local</span> <span>•</span> <span>Master Electricians</span>
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold">
+          <span>Licensed & Insured</span>  <span>Pearl, MS Local</span>  <span>Master Electricians</span>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ export default function SpecialtySection() {
   return (
     <section className="bg-stone-950 py-24 relative overflow-hidden">
       {/* Background Effect: Industrial Circuit Pattern */}
-      <div className="absolute inset-0 opacity-5 grayscale invert" style={{ backgroundImage: "url('/circuit-pattern.png')" }} />
+      <div className="absolute inset-0 opacity-5 grayscale invert" style={{ backgroundImage: "url('/images/electrical-solutions/circuit-pattern.jpg')" }} />
       
       <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
         <div>
