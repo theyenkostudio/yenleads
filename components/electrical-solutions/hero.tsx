@@ -3,10 +3,10 @@ export default function ElectricalHero() {
   return (
     <section className="relative h-[95vh] flex items-center bg-black overflow-hidden">
       {/* Dynamic Background: Using a high-end industrial warehouse or solar array */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
+  <div 
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-60"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1558444479-c849cf58f17a?auto=format&fit=crop&q=80&w=2070')`
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/images/electrical-solutions/ess.jpeg')`
         }}
       />
 
@@ -20,7 +20,7 @@ export default function ElectricalHero() {
           
           <h1 className="text-6xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tighter mb-8">
             Precision Solutions. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">
               Uninterrupted Power.
             </span>
           </h1>
@@ -45,7 +45,7 @@ export default function ElectricalHero() {
       </div>
 
       {/* Modern Industrial Accent: Blue Glow Line */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50" />
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-blue-500 to-transparent opacity-50" />
     </section>
   );
 }

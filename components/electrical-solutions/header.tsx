@@ -1,14 +1,14 @@
-// components/Header.tsx
+import Image from 'next/image';
+
 export default function Header() {
   return (
     <nav className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-stone-800 py-4">
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo & Veteran Badge */}
         <div className="flex items-center gap-4">
-          <div className="text-2xl font-bold tracking-tighter text-white">
-            ESS <span className="text-blue-500">ELECTRICAL</span>
-          </div>
-          <img src="/veteran-badge-bw.png" alt="Veteran Owned" className="h-8 hidden sm:block border-l border-stone-700 pl-4" />
+          <Image src="/images/electrical-solutions/ess-logo.svg" alt="ESS Electrical Logo" width={80} height={40} />
+         
+          <img src="/images/electrical-solutions/veteran-owned.jpeg" alt="Veteran Owned" className="h-8 hidden sm:block border-stone-700 pl-4" />
         </div>
         
         {/* Navigation */}
