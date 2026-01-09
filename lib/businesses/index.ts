@@ -2,12 +2,14 @@ import { BusinessData } from "@/lib/types/business";
 import { electricalSolutions } from "./electrical-solutions";
 import { rogersRefrigeration } from "./rogers-refrigeration";
 import { sistersInBirth } from "./sisters-in-birth";
+import { carShopInc } from "./carshop";
 
 // Registry of all businesses
 export const businesses: Record<string, BusinessData> = {
   "electrical-solutions": electricalSolutions,
   "rogers": rogersRefrigeration,
   "sisters-in-birth": sistersInBirth,
+  "carshop": carShopInc
 };
 
 // Get a business by slug
