@@ -1,7 +1,7 @@
 // components/Hero.tsx
 export default function CarshopHero() {
   return (
-    <section className="relative h-[85vh] bg-stone-50 flex items-center overflow-hidden">
+    <section className="relative pt-100 md:pt-0 h-[85vh] bg-stone-50 flex items-center overflow-hidden">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
           <div className="flex gap-2 mb-6">
@@ -9,7 +9,7 @@ export default function CarshopHero() {
              <span className="text-[10px] font-bold px-3 py-1 bg-stone-200 text-stone-600 uppercase tracking-widest">Toyota Specialist</span>
              <span className="text-[10px] font-bold px-3 py-1 bg-stone-200 text-stone-600 uppercase tracking-widest">Honda Specialist</span>
           </div>
-          <h1 className="text-6xl lg:text-7xl font-bold text-stone-900 leading-tight tracking-tighter mb-8">
+          <h1 className="text-4xl lg:text-7xl font-bold text-stone-900 leading-tight tracking-tighter mb-8">
             Factory Trained. <br />
             <span className="text-red-600">Master Certified.</span>
           </h1>
