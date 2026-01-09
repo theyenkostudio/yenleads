@@ -1,10 +1,8 @@
 // components/Hero.tsx
 export default function CarshopHero() {
   return (
-    <section className="relative min-h-screen lg:min-h-[85vh] bg-stone-50 flex items-center overflow-hidden">
-      {/* 1. We use min-h-screen to ensure the hero fills the mobile view.
-         2. pt-28 (7rem) provides a clean 112px gap from the sticky header.
-      */}
+    <section className="relative pt-10 md:pt-0 lg:min-h-[85vh] bg-stone-50 flex items-center overflow-hidden">
+      
       <div className="container mx-auto px-6 lg:pt-0 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="text-left">
           <div className="flex gap-2 mb-6">
