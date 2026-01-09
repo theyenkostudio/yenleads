@@ -3,13 +3,15 @@ import { electricalSolutions } from "./electrical-solutions";
 import { rogersRefrigeration } from "./rogers-refrigeration";
 import { sistersInBirth } from "./sisters-in-birth";
 import { carShopInc } from "./carshop";
+import { bancroftGarage } from "./bancroft";
 
 // Registry of all businesses
 export const businesses: Record<string, BusinessData> = {
   "electrical-solutions": electricalSolutions,
-  "rogers": rogersRefrigeration,
+  rogers: rogersRefrigeration,
   "sisters-in-birth": sistersInBirth,
-  "carshop": carShopInc
+  carshop: carShopInc,
+  "bancroft-garage": bancroftGarage,
 };
 
 // Get a business by slug
