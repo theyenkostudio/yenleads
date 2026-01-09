@@ -100,10 +100,10 @@ export const carShopInc: BusinessData = {
       facebook: "https://www.facebook.com/hondacarshop",
     },
     // Adding utility feature for the QR code mentioned in the crawl
-    features: [
-      "Scan QR Code for GPS Directions",
-      "Located just off Highway 51",
-    ],
+    // features: [
+    //   "Scan QR Code for GPS Directions",
+    //   "Located just off Highway 51",
+    // ],
   },
 
   branding: {
