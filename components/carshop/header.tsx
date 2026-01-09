@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CarshopHeader() {
   return (
@@ -6,9 +7,13 @@ export default function CarshopHeader() {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Link href="/carshop">
-            <span className="text-2xl font-black tracking-tighter text-stone-900 italic">
-              CAR<span className="text-red-600">SHOP</span>
-            </span>
+           <Image
+              src="/images/carshop/carshop-black.svg"
+              alt="Carshop Logo"
+              width={150}
+              height={50}
+              className="object-contain"
+            />
           </Link>
         </div>
 
