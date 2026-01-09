@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CarshopHeader() {
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-stone-100 py-4 shadow-sm">
+    <nav className="sticky  top-0 z-50 bg-white border-b border-stone-100 py-4 shadow-sm">
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Link href="/carshop">
