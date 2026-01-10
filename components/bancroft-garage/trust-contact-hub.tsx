@@ -62,25 +62,25 @@ export default function TrustContactHub() {
 
         {/* Right: Quick Action & Map Placeholder */}
         <div className="relative">
-          <div className="bg-stone-900 p-10 text-white rounded-lg shadow-2xl relative z-10">
+          <div className="bg-stone-900 p-6 sm:p-10 text-white rounded-lg shadow-2xl relative z-10">
             <h4 className="text-2xl font-black italic mb-6">QUICK BOOKING</h4>
             <div className="space-y-6">
-              <div className="flex items-center gap-6 p-4 bg-white/5 border border-white/10 hover:border-yellow-400 transition-colors cursor-pointer">
-                <Phone className="w-6 h-6 text-yellow-400" />
-                <div>
+              <div className="flex items-center gap-4 sm:gap-6 p-4 bg-white/5 border border-white/10 hover:border-yellow-400 transition-colors cursor-pointer">
+                <Phone className="w-6 h-6 text-yellow-400 shrink-0" />
+                <div className="min-w-0">
                   <p className="text-[10px] uppercase font-bold text-stone-400">
                     Call the Garage
                   </p>
-                  <p className="text-xl font-bold">020 7790 6128</p>
+                  <p className="text-lg sm:text-xl font-bold">020 7790 6128</p>
                 </div>
               </div>
-              <div className="flex items-center gap-6 p-4 bg-white/5 border border-white/10 hover:border-yellow-400 transition-colors cursor-pointer">
-                <Mail className="w-6 h-6 text-yellow-400" />
-                <div>
+              <div className="flex items-center gap-4 sm:gap-6 p-4 bg-white/5 border border-white/10 hover:border-yellow-400 transition-colors cursor-pointer">
+                <Mail className="w-6 h-6 text-yellow-400 shrink-0" />
+                <div className="min-w-0">
                   <p className="text-[10px] uppercase font-bold text-stone-400">
                     Email Service
                   </p>
-                  <p className="text-xl font-bold">info@bancroftgarage.co.uk</p>
+                  <p className="text-base sm:text-xl font-bold break-all sm:break-normal">info@bancroftgarage.co.uk</p>
                 </div>
               </div>
             </div>
