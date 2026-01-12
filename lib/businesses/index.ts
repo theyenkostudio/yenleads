@@ -5,6 +5,7 @@ import { sistersInBirth } from "./sisters-in-birth";
 import { carShopInc } from "./carshop";
 import { bancroftGarage } from "./bancroft";
 import { samsAutos } from "./sams-auto";
+import { kmAutoData } from "./km-auto";
 
 // Registry of all businesses
 export const businesses: Record<string, BusinessData> = {
@@ -13,7 +14,8 @@ export const businesses: Record<string, BusinessData> = {
   "sisters-in-birth": sistersInBirth,
   carshop: carShopInc,
   "bancroft-garage": bancroftGarage,
-  "sams-auto": samsAutos
+  "sams-auto": samsAutos,
+  'km-auto': kmAutoData
 };
 
 // Get a business by slug
