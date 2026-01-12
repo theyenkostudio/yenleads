@@ -1,18 +1,18 @@
 "use client"
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, ShieldCheck } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 export default function SamsHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-stone-200">
-      <div className="container mx-auto px-6 h-20 flex justify-between items-center">
-        {/* Branding: High-impact minimal logo */}
+      <div className="container mx-auto px-6 h-20 flex justify-between items-center relative z-[70]">
+        {/* Branding */}
         <div className="flex items-center gap-2">
-          <div className="bg-red-600 text-white px-3 py-1 font-black italic text-2xl tracking-tighter">
-            SAMS<span className="text-stone-900">AUTOS</span>
+          <div className="bg-red-600 text-white px-3 py-1 font-black italic text-2xl tracking-tighter uppercase">
+            SAMS<span className="text-stone-900 ml-1">AUTOS</span>
           </div>
         </div>
 
@@ -35,22 +35,39 @@ export default function SamsHeader() {
           </a>
         </nav>
 
-        {/* Mobile Toggle */}
-        <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden z-[60] text-stone-900">
-          {isOpen ? <X size={32} /> : <Menu size={32} />}
+        {/* Mobile Toggle - Ensure this stays above the red background */}
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          className="lg:hidden p-2 text-stone-900 focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? <X size={32} className="text-white relative z-[80]" /> : <Menu size={32} />}
         </button>
       </div>
 
-      {/* Mobile Drawer (Matches the Light Mode Theme) */}
-      <div className={`fixed inset-0 bg-white z-50 transition-transform duration-500 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex flex-col h-full pt-32 px-10 space-y-8">
+      {/* Mobile Drawer Fix: Added h-screen, w-full, and opacity control */}
+      <div 
+        className={`
+          fixed inset-0 h-screen w-full bg-red-600 z-[60] transition-transform duration-500 ease-in-out
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}
+      >
+        <div className="flex flex-col h-full pt-32 px-10 space-y-8 bg-red-600">
           {['MOT Testing', 'German Specialists', 'Service & Repairs', 'Contact'].map((item) => (
-            <a key={item} href="#" className="text-4xl font-black italic text-stone-900 uppercase tracking-tighter border-b border-stone-100 pb-4">
+            <a 
+              key={item} 
+              href="#" 
+              onClick={() => setIsOpen(false)}
+              className="text-4xl font-black italic text-white uppercase tracking-tighter border-b border-white/20 pb-4 active:text-stone-900"
+            >
               {item}
             </a>
           ))}
-          <a href="tel:02077206265" className="bg-red-600 text-white py-6 text-center text-xl font-black italic uppercase">
-            Call the Workshop
+          <a 
+            href="tel:02077206265" 
+            className="mt-4 bg-white text-red-600 py-6 text-center text-xl font-black italic uppercase shadow-xl"
+          >
+            Call 020 7720 6265
           </a>
         </div>
       </div>
