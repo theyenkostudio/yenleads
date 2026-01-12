@@ -42,7 +42,7 @@ export default function SamsHero() {
         </div>
 
         {/* Professional Technical Visual - Showing a comprehensive workshop view */}
-        <div className="relative">
+        <div className="relative md:pb-0 pb-4">
           <div className="aspect-square bg-stone-50 rounded-2xl overflow-hidden border border-stone-100">
              <img 
                src="/images/sams-auto/workshop-hero.webp" 
